@@ -6,8 +6,11 @@ kind: Pod
 metadata:
   name: my-pod
 spec:
+  hostPID: true
+  hostIPC: true
+  hostNetwork: true
   containers:
   - name: my-container
     image: nginx
-    securityContext:
-      allowPrivilegeEscalation: true
+#    securityContext:
+#      allowPrivilegeEscalation: true
