@@ -1,2 +1,2 @@
 # Kubernetes-test
-This is for pod security admission
+This is for Pod Security Standards
