@@ -12,3 +12,7 @@ spec:
     image: nginx
     securityContext:
       allowPrivilegeEscalation: true
+#      allowPrivilegeEscalation: true
+#      privileged: true
+      capabilities:
+        add: ["NET_ADMIN", "SYS_TIME"]
